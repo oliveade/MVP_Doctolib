@@ -40,7 +40,7 @@ function NavItem({
 export default function NavBar() {
   const pathname = usePathname();
   return (
-    <header className="bg-[#0E73B8] text-white sticky top-0 z-50">
+    <header className="bg-[#007CD0] text-white sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4">
 
         <div className="h-14 flex items-center justify-between">
