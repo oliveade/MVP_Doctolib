@@ -13,7 +13,6 @@ export default function SantePage() {
       <div className="px-4 pt-6">
         <h1 className="text-2xl font-bold">Tania T <span aria-label="vérifié" title="vérifié">🟦</span></h1>
       </div>
-
       <section className="mt-4 px-4">
         <div className="flex gap-4 overflow-x-auto pb-1">
           {tips.map(t => (
