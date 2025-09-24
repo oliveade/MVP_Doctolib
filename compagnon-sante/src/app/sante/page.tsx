@@ -1,3 +1,4 @@
+"use client";
 import InfoTiles from "@/components/InfoTiles";
 import HealthGoal from "@/components/HealthGoal";
 import DocumentSection from "@/components/DocumentSection";
