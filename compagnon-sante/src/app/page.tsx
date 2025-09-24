@@ -47,7 +47,7 @@ export default function Home() {
           title="Mettre à jour le carnet de santé :"
           stepText="1/3"
           barColor="#007CD0"
-          value={60}
+          value={33}
         />
       </section>
 

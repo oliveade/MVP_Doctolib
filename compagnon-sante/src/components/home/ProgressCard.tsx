@@ -18,12 +18,12 @@ export default function ProgressCard({
     <div className="bg-white rounded-xl shadow-md p-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-            <div className="h-12 w-12 rounded-2xl bg-[#FFF3C9] flex items-center justify-center">
+            <div className="h-12 w-12 rounded-2xl flex items-center justify-center">
             <Image
               src={icon}
               alt={title}
-              width={24}
-              height={24}
+              width={45}
+              height={45}
               className="object-contain"
             />
           </div>

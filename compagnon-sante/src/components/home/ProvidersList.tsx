@@ -13,7 +13,7 @@ export default function ProvidersList({ providers }: { providers: Provider[] }) 
   return (
     <ul className="px-4 mt-2 space-y-3">
       {providers.map((p) => (
-        <li key={p.id} className="flex gap-3 py-3 border-b last:border-0">
+        <li key={p.id} className="flex gap-3 py-3 ">
           <img
             src={p.avatar}
             alt={p.name}
