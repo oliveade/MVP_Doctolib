@@ -52,7 +52,7 @@ export default function Home() {
       </section>
 
       <section className="px-4 mt-6">
-        <h2 className="text-[22px] font-semibold text-slate-900">Mes Soignants</h2>
+        <h2 className="text-[18px] font-semibold text-[#2B5872]">Mes Soignants</h2>
       </section>
 
       <ProvidersList providers={providers} />

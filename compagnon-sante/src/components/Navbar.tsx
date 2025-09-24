@@ -43,44 +43,43 @@ export default function NavBar() {
     <header className="bg-[#007CD0] text-white sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4">
 
-        <div className="h-14 flex items-center justify-between">
+       <div className="h-14 flex items-center justify-center lg:justify-between">
+  <div className="flex items-center">
+    <Link href="/" className="flex items-center">
+      <span className="text-2xl font-semibold italic leading-none">
+        Doctolib
+      </span>
+    </Link>
+  </div>
 
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center">
+  <nav className="hidden lg:flex items-center gap-1">
+    {items.map((it) => (
+      <NavItem
+        key={it.href}
+        href={it.href}
+        label={it.label}
+        icon={it.icon}
+        isActive={
+          it.href === "/"
+            ? pathname === "/"
+            : pathname.startsWith(it.href)
+        }
+      />
+    ))}
+  </nav>
 
-              <span className="text-2xl font-semibold italic leading-none">
-                Doctolib
-              </span>
-            </Link>
-          </div>
+  <div className="hidden lg:flex items-center">
+    <button
+      className="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-white/15"
+      aria-haspopup="menu"
+      aria-expanded="false"
+    >
+      <span>User Test</span>
+      <ChevronDown className="h-4 w-4 opacity-90" />
+    </button>
+  </div>
+</div>
 
-          <nav className="hidden lg:flex items-center gap-1">
-            {items.map((it) => (
-              <NavItem
-                key={it.href}
-                href={it.href}
-                label={it.label}
-                icon={it.icon}
-                isActive={
-                  it.href === "/"
-                    ? pathname === "/"
-                    : pathname.startsWith(it.href)
-                }
-              />
-            ))}
-          </nav>
-
-          <div className="hidden lg:flex items-center">
-            <button
-              className="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-white/15"
-              aria-haspopup="menu"
-              aria-expanded="false"
-            >
-              <span>User Test</span>
-              <ChevronDown className="h-4 w-4 opacity-90" />
-            </button>
-          </div>
-        </div>
         
       </div>
     </header>
