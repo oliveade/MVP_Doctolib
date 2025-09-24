@@ -18,7 +18,7 @@ export default function Home() {
       name: "Dr Sarah MEDJANI",
       specialty: "Médecin généraliste",
       city: "Nanterre",
-      avatar: "/avatars/doc1.jpg",
+      avatar: "/avatar/Avatar.png",
       video: true,
     },
     {
@@ -26,7 +26,7 @@ export default function Home() {
       name: "Dr Sarah MEDJANI",
       specialty: "Médecin généraliste",
       city: "Nanterre",
-      avatar: "/avatars/doc1.jpg",
+      avatar: "/avatar/Avatar.png",
       video: true,
     },
   ];
@@ -34,7 +34,6 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white pb-24 sm:pb-0">
       <HomeHero user="Clara" />
-
       <section className="px-4 -mt-6 space-y-3">
         <ProgressCard
           icon="tooth"

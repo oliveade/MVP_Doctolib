@@ -1,9 +1,9 @@
 
-import { ClipboardList, Tooth } from "lucide-react";
+import { ClipboardCheck, Syringe } from "lucide-react";
 
 const ICON_MAP = {
-  clipboard: ClipboardList,
-  tooth: Tooth,
+  clipboard: ClipboardCheck,
+  tooth: Syringe,
 } as const;
 
 export default function ProgressCard({
