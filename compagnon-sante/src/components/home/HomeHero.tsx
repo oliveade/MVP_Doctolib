@@ -2,11 +2,7 @@ import { Search } from "lucide-react";
 
 export default function HomeHero({ user }: { user: string }) {
   return (
-    <div className="relative bg-[#0E73B8] text-white pb-20 pt-8 px-4 overflow-hidden">
-      <div className="text-3xl font-semibold italic">
-        Docto<span className="not-italic font-normal">lib</span>
-      </div>
-
+    <div className="relative bg-[#007CD0] text-white pb-20 pt-8 px-4 overflow-hidden">
       <h1 className="mt-6 text-[34px] leading-[1.05] font-extrabold">
         Bonjour {user},<br />
         <span className="font-semibold">chaque petit pas compte</span>

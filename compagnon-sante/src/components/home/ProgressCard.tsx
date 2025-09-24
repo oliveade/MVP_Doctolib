@@ -1,10 +1,5 @@
-
-import { ClipboardCheck, Syringe } from "lucide-react";
-
-const ICON_MAP = {
-  clipboard: ClipboardCheck,
-  tooth: Syringe,
-} as const;
+"use client"
+import Image from "next/image";
 
 export default function ProgressCard({
   icon,
@@ -13,20 +8,24 @@ export default function ProgressCard({
   value,
   barColor = "#F5D36C",
 }: {
-  icon: keyof typeof ICON_MAP;
+  icon: string
   title: string;
   stepText: string; 
   value: number; 
   barColor?: string;
 }) {
-  const Icon = ICON_MAP[icon];
-
   return (
     <div className="bg-white rounded-xl shadow-md p-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="h-12 w-12 rounded-2xl bg-[#FFF3C9] flex items-center justify-center">
-            <Icon className="h-6 w-6 text-[#0E73B8]" />
+            <div className="h-12 w-12 rounded-2xl bg-[#FFF3C9] flex items-center justify-center">
+            <Image
+              src={icon}
+              alt={title}
+              width={24}
+              height={24}
+              className="object-contain"
+            />
           </div>
           <h3 className="font-semibold text-slate-900">{title}</h3>
         </div>

@@ -34,19 +34,19 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white pb-24 sm:pb-0">
       <HomeHero user="Clara" />
-      <section className="px-4 -mt-6 space-y-3">
+      <section className="px-4 mt-6 space-y-3">
         <ProgressCard
-          icon="tooth"
+          icon="/avatar/tooth.png"
           title="Avoir de belle dents"
           stepText="1/5"
-          barColor="#F5D36C"
+          barColor="#FFCD4D"
           value={20}
         />
         <ProgressCard
-          icon="clipboard"
+          icon="/avatar/medical.png"
           title="Mettre à jour le carnet de santé :"
           stepText="1/3"
-          barColor="#7DB8F3"
+          barColor="#007CD0"
           value={60}
         />
       </section>
