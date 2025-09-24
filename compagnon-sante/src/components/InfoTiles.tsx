@@ -1,25 +1,51 @@
 "use client";
 import {
-  Stethoscope, Pill, ShieldAlert, Users, Hospital, Syringe, LineChart, HandHeart
+  Stethoscope,
+  Pill,
+  ShieldAlert,
+  Users,
+  Hospital,
+  Syringe,
+  LineChart,
+  HandHeart,
 } from "lucide-react";
+import type { ComponentType, SVGProps } from "react";
 
-const ICONS: Record<string, any> = {
-  stethoscope: Stethoscope, capsule: Pill, allergy: ShieldAlert,
-  family: Users, hospital: Hospital, syringe: Syringe,
-  chart: LineChart, "heart-hands": HandHeart,
+type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
+
+const ICONS: Record<string, IconComponent> = {
+  stethoscope: Stethoscope,
+  capsule: Pill,
+  allergy: ShieldAlert,
+  family: Users,
+  hospital: Hospital,
+  syringe: Syringe,
+  chart: LineChart,
+  "heart-hands": HandHeart,
+};
+
+type TileItem = {
+  key: string;
+  label: string;
+  icon: keyof typeof ICONS;
+  badge?: number;
 };
 
 export default function InfoTiles({
-  items, onClick
-}:{ items:{key:string; label:string; icon:keyof typeof ICONS; badge?:number}[];
-   onClick:(key:string)=>void; }) {
+  items,
+  onClick,
+}: {
+  items: TileItem[];
+  onClick: (key: string) => void;
+}) {
   return (
     <div className="grid grid-cols-2 gap-4">
       {items.map(({ key, label, icon, badge }) => {
         const Icon = ICONS[icon];
         return (
-          <button key={key}
-            onClick={()=>onClick(key)}
+          <button
+            key={key}
+            onClick={() => onClick(key)}
             className="relative rounded-2xl bg-white shadow-md p-6 text-left hover:shadow-lg transition"
           >
             {!!badge && (
