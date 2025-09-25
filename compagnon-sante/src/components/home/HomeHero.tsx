@@ -10,7 +10,7 @@ export default function HomeHero({ user }: { user: string }) {
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-4">
         <h1 className="text-[32px] leading-tight font-extrabold text-center max-w-[320px]">
           <span className="block">Bonjour {user},</span>
-          <span className="block text-[22px] font-semibold text-[#A0D3EA]">
+          <span className="block text-[22px] font-semibold text-[#A0D3EA] ">
             chaque petit pas compte
           </span>
           <span className="block text-[22px] font-semibold text-[#A0D3EA]">
