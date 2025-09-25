@@ -9,7 +9,7 @@ export default function AppointmentAlert({ dateLabel }: { dateLabel: string }) {
         </div>
         <div className="flex-1">
           <div className="font-semibold text-[16px]">Votre rendez-vous est dans 2 jours !</div>
-          <div className="text-[14px] text-slate-600 mt-1">{dateLabel}</div>
+          <div className="text-[14px] text-slate-600 mt-2">{dateLabel}</div>
         </div>
       </div>
     </div>

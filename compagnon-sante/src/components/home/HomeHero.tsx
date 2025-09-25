@@ -2,7 +2,7 @@ import { Search } from "lucide-react";
 
 export default function HomeHero({ user }: { user: string }) {
   return (
-    <div className="relative bg-[#007CD0] text-white h-[300px] px-4 overflow-hidden flex items-center justify-center">
+    <div className="relative bg-[#007CD0] text-white h-[300px] px-4 overflow-hidden flex items-center justify-center rounded-b-3xl">
       <div className="absolute -right-20 top-16 w-[260px] h-[260px] bg-[#00BFFF] rounded-full opacity-40 z-0" />
       <div className="absolute right-6 top-24 w-12 h-12 bg-[#FFCD4D] rounded-2xl rotate-12 z-0" />
       <div className="absolute right-0 bottom-6 w-40 h-40 bg-[#00264C] rounded-tl-[120px] rounded-bl-[40px] z-0" />
