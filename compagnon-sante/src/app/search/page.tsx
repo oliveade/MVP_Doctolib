@@ -28,7 +28,7 @@ export default function RecherchePage() {
                         Trouvez votre professionnel de soins idéal
                     </h1>
 
-                    <div className="mt-3 rounded-2xl bg-white p-3 shadow-[0_6px_16px_rgba(0,0,0,0.06)] h-[150px]">
+                    <div className="mt-3 rounded-2xl bg-white p-3 shadow-[0_6px_16px_rgba(0,0,0,0.06)] h-auto">
                         <SearchBox />
                         {/* <div className="mt-3 grid grid-cols-3 gap-2">
               <button className="h-10 rounded-full border bg-white px-3 text-sm font-semibold flex items-center justify-center gap-2">
