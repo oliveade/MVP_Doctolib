@@ -30,21 +30,6 @@ export default function RecherchePage() {
 
                     <div className="mt-3 rounded-2xl bg-white p-3 shadow-[0_6px_16px_rgba(0,0,0,0.06)] h-auto">
                         <SearchBox />
-                        {/* <div className="mt-3 grid grid-cols-3 gap-2">
-              <button className="h-10 rounded-full border bg-white px-3 text-sm font-semibold flex items-center justify-center gap-2">
-                <img src="/avatar/filtre.png" alt="" className="h-4 w-4" />
-                Filtres
-              </button>
-              <button className="h-10 rounded-full border bg-white px-3 text-sm font-semibold flex items-center justify-center gap-2">
-                <img src="/avatar/agenda.png" alt="" className="h-4 w-4" />
-                Disponibilités
-              </button>
-              <button className="h-10 rounded-full border bg-white px-3 text-sm font-semibold flex items-center justify-center gap-2">
-                <img src="/avatar/location.png" alt="" className="h-4 w-4" />
-                Secteur
-              </button>
-                        </div> */}
-
                         <div className="mt-3 flex flex-wrap gap-3">
                             <button className="h-10 rounded-full border bg-white px-4 text-sm font-semibold flex items-center gap-2">
                                 <img src="/avatar/filtre.png" className="h-4 w-4" />
@@ -56,7 +41,7 @@ export default function RecherchePage() {
                             </button>
                             <button className="h-10 rounded-full border bg-white px-4 text-sm font-semibold flex items-center gap-2">
                                 <img src="/avatar/location.png" className="h-4 w-4" />
-                                Secteur
+                                Lieux
                             </button>
                         </div>
 

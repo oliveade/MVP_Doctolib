@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Specialty {
+  id    String  @id @default(cuid())
+  slug  String  @unique
+  name  String
+  subs  SubSpecialty[]
+  practitioners Practitioner[]
+}
+
+model SubSpecialty {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  name        String
+  specialtyId String
+  specialty   Specialty @relation(fields: [specialtyId], references: [id])
+  practitioners PractitionerOnSub[]
+}
+
+model Practitioner {
+  id           String   @id @default(cuid())
+  name         String
+  specialtyId  String
+  specialty    Specialty @relation(fields: [specialtyId], references: [id])
+  sector       String   // "1" | "2"
+  city         String
+  address      String
+  video        Boolean  @default(false)
+  avatar       String?
+  subs         PractitionerOnSub[]
+  slots        Slot[]
+  createdAt    DateTime @default(now())
+
+  @@index([city])
+  @@index([specialtyId])
+}
+
+model PractitionerOnSub {
+  practitionerId String
+  subId          String
+  practitioner   Practitioner @relation(fields: [practitionerId], references: [id], onDelete: Cascade)
+  sub            SubSpecialty @relation(fields: [subId], references: [id], onDelete: Cascade)
+
+  @@id([practitionerId, subId])
+}
+
+model Slot {
+  id             String   @id @default(cuid())
+  practitionerId String
+  practitioner   Practitioner @relation(fields: [practitionerId], references: [id], onDelete: Cascade)
+  start          DateTime
+  end            DateTime
+  isBooked       Boolean  @default(false)
+
+  @@index([start])
+}

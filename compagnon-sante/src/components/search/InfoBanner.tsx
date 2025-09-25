@@ -1,9 +1,10 @@
 import React from "react";
+import Image from "next/image";
 export default function InfoBanner() {
   return (
     <div className="rounded-2xl bg-[#D8ECFA] p-3 text-[14px] text-slate-700 flex gap-3">
-      <div className="h-9 w-9 rounded-xl bg-[#EAF5FE] flex items-center justify-center">
-        <img src="/avatar/care.png" alt="" className="h-7 w-7" />
+      <div className=" rounded-xl flex items-center justify-center">
+         <Image src="/avatar/care.png" alt=""  width={45} height={45} />
       </div>
       <p>
         Pour faciliter votre parcours de soins, il est recommandé de
