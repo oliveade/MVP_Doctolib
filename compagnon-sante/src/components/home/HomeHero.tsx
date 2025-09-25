@@ -29,3 +29,4 @@ export default function HomeHero({ user }: { user: string }) {
     </div>
   );
 }
+

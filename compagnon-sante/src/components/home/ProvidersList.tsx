@@ -20,7 +20,7 @@ export default function ProvidersList({ providers }: { providers: Provider[] }) 
             className="h-12 w-12 rounded-full object-cover"
           />
           <div className="flex-1">
-            <a href="#" className="block font-semibold text-[17px] text-slate-900">
+            <a href="#" className="block font-semibold text-[16px] text-slate-900">
               {p.name}
             </a>
             <div className="mt-1 flex items-center gap-2 text-[15px] text-slate-700">
