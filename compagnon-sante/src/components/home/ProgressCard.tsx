@@ -25,7 +25,7 @@ export default function ProgressCard({
                 <div className="flex-1">
                     <div className="flex text-center justify-between">
                         <h3 className="font-semibold text-[17px] text-slate-900">{title}</h3>
-                        <span className="text-[13px] font-semibold text-[#0E73B8] bg-[#E7F2FF] px-2 py-1 rounded-full shrink-0">
+                        <span className="text-[13px] font-semibold px-2 py-1 rounded-full shrink-0" style={{color: trackColor, background: barColor}}>
                             {stepText}
                         </span>
                     </div>

@@ -19,7 +19,7 @@ export default function HomeHero({ user }: { user: string }) {
         </h1>
 
         <a
-          href="/recherche"
+          href="/search"
           className="flex w-[247px] h-14 items-center justify-center gap-3 rounded-2xl bg-white text-[#0E73B8] shadow-lg"
         >
           <Search className="h-5 w-5" />
