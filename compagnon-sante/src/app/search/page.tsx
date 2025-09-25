@@ -24,7 +24,7 @@ export default function RecherchePage() {
             <div className="bg-gradient-to-b from-[#DFF3FF] to-[#F6F9FB]">
                 <SearchHeader />
                 <section className="px-4">
-                    <h1 className="text-[20px] font-semibold text-slate-900 mt-6">
+                    <h1 className="text-[20px] font-semibold text-slate-900 mt-6 text-center">
                         Trouvez votre professionnel de soins idéal
                     </h1>
 
@@ -43,7 +43,7 @@ export default function RecherchePage() {
                 <img src="/avatar/location.png" alt="" className="h-4 w-4" />
                 Secteur
               </button>
-            </div> */}
+                        </div> */}
 
                         <div className="mt-3 flex flex-wrap gap-3">
                             <button className="h-10 rounded-full border bg-white px-4 text-sm font-semibold flex items-center gap-2">
